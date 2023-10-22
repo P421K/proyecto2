@@ -25,7 +25,6 @@
 display: flex;
 justify-content: center;
 }
-
 .conteiner-display{
    
     height: 300px;
@@ -41,24 +40,116 @@ justify-content: center;
     width: 250px;
     background-color: #fff;
 }
-
 .container-btn{
     display: flex;
     border: 1px solid black;
+    justify-content: space-between;
 }
 .btn-scroll{
+    margin-left: 60px;
+    position: relative;
     display: flex;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
     background-color: rgb(42, 96, 16);
 }
 .btn-up-down{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: grey;
+    height: 120px;
+    width: 40px;
+
+}
+.btn-up, .btn-down, .btn-left, .btn-right{
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.btn-left-right{
+    display: flex;
+    justify-content: space-between;
     background-color: grey;
     height: 40px;
-    width: 100px;
+    width: 120px;
+}
+/* .conteiner-btn-non-fun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.btn-non-fun{
+    transform: rotate(-30deg);
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 130px;
+    width: 130px;
+    /* background-color: rgb(42, 96, 16); */
 }
 
-.btn-left-right{
-    
+.btn-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* text-align: center; */
+
+}
+
+.btn-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.conteiner-btn-restart-power{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.btn-restart-power{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:aqua;
+    height: 25px;
+    width: 150px;
+}
+
+.conteiner-refrigeracion{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.refrigeracion{
+    transform: rotate(-30deg);
+
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 120px;
+    /* background-color: burlywood; */
+}
+
+.rectangle1, .rectangle2, .rectangle3{
+    height: 80px;
+    width: 20px;
+    background-color: aqua
 }
