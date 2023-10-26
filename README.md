@@ -23,7 +23,7 @@ Segundo proyecto realizado en GeeksHubs! donde pondremos a prueba nuestros conoc
 ## Deploy 🚀
 
 <div align="center">
-    <a href="https://www.google.com"><strong>Url para ir a Proyecto 2! </strong></a>🚀🚀🚀
+    <a href="https://p421k.github.io/proyecto2/"><strong>Url para ir a Proyecto 2! </strong></a>🚀🚀🚀
 </div>
 
 ## Vistas
