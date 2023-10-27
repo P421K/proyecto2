@@ -31,14 +31,14 @@
     border-radius: 50%;
     height: 25px;
     width: 25px;
-    background-color: green;
+    /* background-color: green; */
 }       
 
 #light-power-off{
     border-radius: 50%;
     height: 25px;
     width: 25px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .main-conteiner-display{
@@ -62,6 +62,7 @@
     height: 170px;
     width: 170px;
     background-color: rgba(127, 255, 212, 0.418);
+    
 }
 
 .container-btn{
@@ -193,4 +194,9 @@
     width: 20px;
     background-color: rgb(110, 110, 110);
 
+}
+
+#displayChange{
+    width: 170px;
+    height: 170px;
 }
