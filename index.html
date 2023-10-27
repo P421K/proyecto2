@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>parikGames</title>
   </head>
   <body>
     <!-- btn = boton -->
     <div class="main-conteiner">
       <div id="imagen-consola">
-        <img src="./img/imgConsola/img-consola.png"  alt="">
+        <img src="./img/imgConsola/img-consola.png" alt="" />
       </div>
       <div class="conteiner">
         <div class="main-conteiner-display">
@@ -19,7 +19,9 @@
             <div id="light-power-off">off</div>
           </div>
           <div class="conteiner-display">
-            <div class="display">display</div>
+            <div id="display">
+              
+            <img src="./img/imgGames/img-batman copy.jpg" alt="" id="displayChange"></div>
           </div>
         </div>
         <div class="container-btn">
@@ -33,12 +35,12 @@
               </div>
             </div>
             <div class="btn-left-right">
-              <div class="btn-left">
+              <button id="btn-left" onclick="clickBoton('left')">
                 <p>left</p>
-              </div>
-              <div class="btn-right">
+              </button>
+              <button id="btn-right" onclick="clickBoton('right')">
                 <p>right</p>
-              </div>
+              </button>
             </div>
           </div>
           <div class="conteiner-btn-non-fun">
@@ -56,12 +58,13 @@
         </div>
         <div class="conteiner-audio">
           <div class="audio">
-              <div class="rectangle1">1</div>
-              <div class="rectangle2">2</div>
-              <div class="rectangle3">3</div>
+            <div class="rectangle1">1</div>
+            <div class="rectangle2">2</div>
+            <div class="rectangle3">3</div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
