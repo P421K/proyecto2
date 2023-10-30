@@ -1,18 +1,17 @@
 //inicio proyecto 2
 
-//inicio botones left y right
-
+//variables proyecto
 let btnLeft = document.getElementById("btn-left");
 let btnRight = document.getElementById("btn-right");
 let displayChange = document.getElementById("displayChange");
-let contador = 0;
+let contador = 1;
 let luzEncendido = 0;
 let power = document.getElementById("btn-power");
 let restart = document.getElementById("btn-restart");
 let powerOff = document.getElementById("light-power-off-on");
-let colorGrey =  document.getElementById("color-grey");
-let colorPurple =  document.getElementById("color-purple");
-let colorGreen =   document.getElementById("color-green");
+let colorGrey = document.getElementById("color-grey");
+let colorPurple = document.getElementById("color-purple");
+let colorGreen = document.getElementById("color-green");
 let colorConsola = document.getElementById("imagen-consola");
 
 // btnLeft.onclick = function () {
@@ -38,6 +37,10 @@ power.onclick = function () {
 };
 
 //acciones del boton restart
+restart.onclick = function () {
+  displayChange.src = "./img/imgGames/img-batman.jpeg";
+  contador = 0;
+};
 //accion del boton right
 btnRight.onclick = function () {
   if (contador <= 0) {
@@ -81,14 +84,13 @@ btnLeft.onclick = function () {
 };
 
 //cambiar color de consola
-colorGrey.onclick = function(){
+colorGrey.onclick = function () {
   colorConsola.style.backgroundColor = "#A6ACAF";
-}
-colorPurple.onclick = function(){
+};
+colorPurple.onclick = function () {
   colorConsola.style.backgroundColor = "#8E44AD";
-}
+};
 
-colorGreen.onclick = function(){
+colorGreen.onclick = function () {
   colorConsola.style.backgroundColor = "#138D75";
-}
-
+};
