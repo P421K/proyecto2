@@ -10,18 +10,21 @@
     <!-- btn = boton -->
     <div class="main-conteiner">
       <div id="imagen-consola">
-        <img src="./img/imgConsola/img-consola.png" alt="" />
+        <!-- <img src="./img/imgConsola/img-consola.png" alt="" /> -->
       </div>
       <div class="conteiner">
         <div class="main-conteiner-display">
           <div class="ligths-power">
-            <div id="light-power-on">on</div>
-            <div id="light-power-off">off</div>
+            <div id="light-power-off-on"></div>
           </div>
           <div class="conteiner-display">
             <div id="display">
-              
-            <img src="./img/imgGames/img-inicio.jpeg" alt="" id="displayChange"></div>
+              <img
+                src="./img/imgGames/img-inicio.jpeg"
+                alt=""
+                id="displayChange"
+              />
+            </div>
           </div>
         </div>
         <div class="container-btn">
@@ -52,7 +55,9 @@
         </div>
         <div class="conteiner-btn-restart-power">
           <div class="btn-restart-power">
-            <div class="btn-restart">restart</div>
+            <button id="btn-restart" onclick="clickBoton('restart')">
+              <p>restart</p>
+            </button>
             <button id="btn-power" onclick="clickBoton('power')">
               <p>power</p>
             </button>
@@ -60,10 +65,15 @@
         </div>
         <div class="conteiner-audio">
           <div class="audio">
-            <div class="rectangle1">1</div>
-            <div class="rectangle2">2</div>
-            <div class="rectangle3">3</div>
+            <div class="rectangle1"></div>
+            <div class="rectangle2"></div>
+            <div class="rectangle3"></div>
           </div>
+        </div>
+        <div class="color-select">
+          <button onclick="clickBoton('grey')" id="color-grey"></button>
+          <button onclick="clickBoton('purple')" id="color-purple"></button>
+          <button onclick="clickBoton('green')" id="color-green"></button>
         </div>
       </div>
     </div>
