@@ -14,13 +14,6 @@ let colorPurple = document.getElementById("color-purple");
 let colorGreen = document.getElementById("color-green");
 let colorConsola = document.getElementById("imagen-consola");
 
-// btnLeft.onclick = function () {
-//   displayChange.src = "./img/imgGames/img-sims.jpeg";
-// };
-// btnRight.onclick = function () {
-//   displayChange.src = "./img/imgGames/img-pacMan.jpeg";
-// };
-
 //acciones del boton power
 power.onclick = function () {
   if (luzEncendido == 0) {
@@ -41,6 +34,7 @@ restart.onclick = function () {
   displayChange.src = "./img/imgGames/img-batman.jpeg";
   contador = 0;
 };
+
 //accion del boton right
 btnRight.onclick = function () {
   if (contador <= 0) {
@@ -94,3 +88,6 @@ colorPurple.onclick = function () {
 colorGreen.onclick = function () {
   colorConsola.style.backgroundColor = "#138D75";
 };
+
+
+  q

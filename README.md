@@ -29,7 +29,10 @@ Segundo proyecto realizado en GeeksHubs! donde pondremos a prueba nuestros conoc
 ## Vistas
 
 Ejemplo
-<img src="./img/cat.jpg">
+<img src="./img/imgPantallas/img-pantalla1.png">
+<img src="./img/imgPantallas/img-pantalla2.png">
+<img src="./img/imgPantallas/img-pantalla3.png">
+<img src="./img/imgPantallas/img-pantalla4.png">
 
 ## Contacto
 
