@@ -38,7 +38,7 @@
     border-radius: 50%;
     height: 25px;
     width: 25px;
-    /* background-color: red; */
+    background-color: red;
 }
 
 .main-conteiner-display{
@@ -95,7 +95,7 @@
 
 }
 .btn-up, .btn-down, #btn-left, #btn-right{
-    color: white;
+    color: #008000;
     background-color: rgba(0, 0, 0, 0.413);
     height: 30px;
     width: 30px;
@@ -165,7 +165,7 @@
     margin-right: 30px;
 }
 
-.btn-restart, .btn-power {
+.btn-restart, #btn-power {
 
     background-color:rgba(128, 0, 128, 0.555);
     color: aliceblue;
