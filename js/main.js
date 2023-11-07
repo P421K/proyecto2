@@ -5,7 +5,7 @@ let btnLeft = document.getElementById("btn-left");
 let btnRight = document.getElementById("btn-right");
 let displayChange = document.getElementById("displayChange");
 let contador = 1;
-let luzEncendido = 0;
+var luzEncendido = 1;
 let power = document.getElementById("btn-power");
 let restart = document.getElementById("btn-restart");
 let powerOff = document.getElementById("light-power-off-on");
@@ -30,50 +30,66 @@ power.onclick = function () {
 };
 
 //acciones del boton restart
-restart.onclick = function () {
-  displayChange.src = "./img/imgGames/img-batman.jpeg";
-  contador = 0;
-};
+if (luzEncendido == 1) {
+  restart.onclick = function () {
+    if (luzEncendido == 0) {
+      displayChange.src = "./img/imgGames/img-batman.jpeg";
+      contador = 0;
+    } else if (luzEncendido == 1) {
+      console.log(`btn apagado`);
+    }
+  };
+}
 
 //accion del boton right
+
 btnRight.onclick = function () {
-  if (contador <= 0) {
-    displayChange.src = "./img/imgGames/img-sims.jpeg";
-    contador++;
-    console.log(`contador en ${contador}`);
-  } else if (contador == 1) {
-    displayChange.src = "./img/imgGames/img-pacMan.jpeg";
-    contador++;
-    console.log(`contador en ${contador}`);
-  } else if (contador == 2) {
-    displayChange.src = "./img/imgGames/img-topGear.jpeg";
-    contador++;
-    console.log(`contador en ${contador}`);
-  } else if (contador >= 3) {
-    displayChange.src = "./img/imgGames/img-princeOfPersia.jpeg";
-    contador++;
-    console.log(`contador en ${contador}`);
+  if (luzEncendido == 0) {
+    if (contador <= 0) {
+      displayChange.src = "./img/imgGames/img-sims.jpeg";
+      contador++;
+      console.log(`contador en ${contador}`);
+    } else if (contador == 1) {
+      displayChange.src = "./img/imgGames/img-pacMan.jpeg";
+      contador++;
+      console.log(`contador en ${contador}`);
+    } else if (contador == 2) {
+      displayChange.src = "./img/imgGames/img-topGear.jpeg";
+      contador++;
+      console.log(`contador en ${contador}`);
+    } else if (contador >= 3) {
+      displayChange.src = "./img/imgGames/img-princeOfPersia.jpeg";
+      contador++;
+      console.log(`contador en ${contador}`);
+    }
+  } else if (luzEncendido == 1) {
+    console.log(`btn apagado`);
   }
 };
 
 //accion del boton left
+
 btnLeft.onclick = function () {
-  if (contador <= 0) {
-    displayChange.src = "./img/imgGames/img-sims.jpeg";
-    contador--;
-    console.log(`contador en ${contador}`);
-  } else if (contador == 1) {
-    displayChange.src = "./img/imgGames/img-pacMan.jpeg";
-    contador--;
-    console.log(`contador en ${contador}`);
-  } else if (contador == 2) {
-    displayChange.src = "./img/imgGames/img-topGear.jpeg";
-    contador--;
-    console.log(`contador en ${contador}`);
-  } else if (contador >= 3) {
-    displayChange.src = "./img/imgGames/img-princeOfPersia.jpeg";
-    contador--;
-    console.log(`contador en ${contador}`);
+  if (luzEncendido == 0) {
+    if (contador <= 0) {
+      displayChange.src = "./img/imgGames/img-sims.jpeg";
+      contador--;
+      console.log(`contador en ${contador}`);
+    } else if (contador == 1) {
+      displayChange.src = "./img/imgGames/img-pacMan.jpeg";
+      contador--;
+      console.log(`contador en ${contador}`);
+    } else if (contador == 2) {
+      displayChange.src = "./img/imgGames/img-topGear.jpeg";
+      contador--;
+      console.log(`contador en ${contador}`);
+    } else if (contador >= 3) {
+      displayChange.src = "./img/imgGames/img-princeOfPersia.jpeg";
+      contador--;
+      console.log(`contador en ${contador}`);
+    }
+  } else if (luzEncendido == 1) {
+    console.log(`btn apagado`);
   }
 };
 
@@ -88,6 +104,3 @@ colorPurple.onclick = function () {
 colorGreen.onclick = function () {
   colorConsola.style.backgroundColor = "#138D75";
 };
-
-
-  q

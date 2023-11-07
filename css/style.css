@@ -8,24 +8,16 @@
     position: absolute;
     z-index: -1;
     margin-left: 40px;
-    height: 600px;
+    height: 560px;
     width: 350px;
     background-color: purple;
     border-radius: 10px 10px 50px 10px;
-}
 
-.main-conteiner{
-    margin-top: 10px;
-    position: relative;
-    display: flex;
-    width: 450px; 
-    height: 700px;
 }
 
 .conteiner{
-    height: 600px;
+    height: 00px;
     width: 400px;
-    border-color: grey;
  }
 
 .ligths-power{
@@ -181,13 +173,12 @@
 .conteiner-audio{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 50px;
     margin-right: 30px;
 }
 
 .audio{
     transform: rotate(-30deg);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
     height: 60px;
@@ -231,4 +222,24 @@
 
 #color-green{
     background-color: #138D75;
+}
+
+@media (min-width: 700px) {
+    
+    .main-menu{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+   }
+
+   #imagen-consola{
+    background-color: orange;
+   }
+   .main-conteiner{
+    display: flex;
+    justify-content: center;
+   }
 }
